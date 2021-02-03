@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/domestic_delivery_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_back" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/dom_type_of_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Domestic Delivery"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dom_staring_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="starting from"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toLeftOf="@id/dom_amount"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/dom_type_of_delivery" />
+
+                <TextView
+                    android:id="@+id/dom_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 AED"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/dom_staring_from"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/dom_range_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Within UAE only"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/dom_type_of_delivery"
+                    app:layout_constraintLeft_toLeftOf="@id/dom_type_of_delivery"
+                    />
+
+                <TextView
+                    android:id="@+id/dom_btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_button"
+                    android:text="START DELIVERY"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dom_range_delivery"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/international_delivery_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/domestic_delivery_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/international_delivery_back" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/int_type_of_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Domestic Delivery"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/int_staring_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="starting from"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toLeftOf="@id/int_amount"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/int_type_of_delivery" />
+
+                <TextView
+                    android:id="@+id/int_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 AED"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/int_staring_from"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/int_range_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Within UAE only"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/int_type_of_delivery"
+                    app:layout_constraintLeft_toLeftOf="@id/int_type_of_delivery"
+                    />
+
+                <TextView
+                    android:id="@+id/int_btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_button"
+                    android:text="START DELIVERY"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/int_range_delivery"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/price_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/international_delivery_card"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/btn_price_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/dollar_sign"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/dollar_image"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/get_instant"
+                app:layout_constraintBottom_toBottomOf="@id/check_price_info"
+                />
+
+            <TextView
+                android:id="@+id/get_instant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get instant Quote"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toRightOf="@id/dollar_sign"
+                />
+
+            <TextView
+                android:id="@+id/check_price_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check prices before creating an order"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/get_instant"
+                app:layout_constraintLeft_toLeftOf="@id/get_instant"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_chevron_right_grey_24dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price_card"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/search_sign"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search_pic"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/track_shipment"
+                app:layout_constraintBottom_toBottomOf="@id/with_id"
+                />
+
+            <TextView
+                android:id="@+id/track_shipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track any Shipment"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toRightOf="@id/search_sign"
+                />
+
+            <TextView
+                android:id="@+id/with_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your shipment with just order ID"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/track_shipment"
+                app:layout_constraintLeft_toLeftOf="@id/track_shipment"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_chevron_right_grey_24dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">FreshProject</string>
+    <string name="spinner_prompt">Dubai</string>
+    <string name="unit_prompt">kg</string>
+
+    <string-array name="spinner_items">
+    <item>
+        Dubai
+    </item>
+        <item>
+        Abu Dhabi
+    </item>
+        <item>
+        Ajman
+    </item>
+        <item>
+        Al Ain
+    </item>
+        <item>
+        Fujairah
+    </item>
+        <item>
+        Ras Al-Kaimah
+    </item>
+        <item>
+        Sharjah
+    </item>
+        <item>
+        Umm Al-Quwain
+    </item>
+    </string-array>
+    
+    <string-array name="unit_items">
+        <item>
+            kg
+        </item>
+    </string-array>
+</resources>
